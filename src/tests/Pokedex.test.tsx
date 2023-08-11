@@ -103,7 +103,7 @@ describe('5. Teste o componente <Pokedex.tsx />', () => {
     expect(buttonAll).toBeInTheDocument();
   });
   test('O texto do botão deve ser All.', () => {
-    const { user } = renderWithRouter(<App />);
+    renderWithRouter(<App />);
     const buttonAll = screen.getByRole('button', {
       name: /all/i,
     });
